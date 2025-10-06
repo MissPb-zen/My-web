@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alan Sans', sans-serif;
+}
+
+.hero{
+    text-align: center;
+}
+
+.photo-item {
+    background-size: cover;
+    background-position: center;
+    background-color: #c6de9b;
+}
