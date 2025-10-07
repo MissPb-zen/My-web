@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #41644A;
+}
+
+body {
+  font-family: 'Alan Sans', sans-serif;
+}
+
+.hero {
+  text-align: center;
+  background-color: #41644A;
+  color: #F8c662;
+}
+
+.photo-item {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.section-1,
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-f img {
+  width: 300px;
+  height: 300px;
+}
+
+.card-s img {
+  width: 300px;
+  height: 300px;
+}
+
+.title{
+  color: #41644A;
+}
+
+p{
+  color: #41644A;
+  text-align: center;
+}
+
+h3{
+  color: #41644A;
+}
+
+.footer {
+  background: #41644A;
+  padding: 60px;
+}
+
+.social-media{
+  text-align: center;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.footer-policy {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 0px 30px;
+  color: white;
+}
+
+.wrapperCard {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-f,
+.card-s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  align-self: center;
+}
+
+.nav-menu {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-menu li {
+  all: unset;
+  color: #41644A;
+}
+
+h1{
+  text-align: center;
+  color: #41644A;
+  font-weight: 900
+}
+
+@media screen and (max-width: 628px) {
+  .section-1,
+  .section-2{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-body-links, .footer-policy, .footer-social-media{
+        display: none;
+    }
+    .footer-body h3{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 491px) {
+  .photo-item{
+  height: 100px;
+  }
+}

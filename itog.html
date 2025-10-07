@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarina Andreeva</title>
+    <link rel="stylesheet" href="itog.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <h1>ENTER THE WORLD OF ZARINA ANDREEVA</h1>
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#books" class="nav-link">Books</a></li>
+                <li><a href="#photos" class="nav-link">Photo</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главный раздел -->
+    <section id="home" class="hero">
+        <h2>Zarina Andreeva is a Russian-born writer. <br> Her books range from children's books to macabre fantasy and
+            thrillers. Most of the books are illustrated by the author herself, using delicate, light watercolors,
+            adding a magical quality to the characters.</h2>
+        <p>__</p>
+        <h2>To immerse yourself in the worlds of Zarina Andreeva means experiencing a spectrum of emotions: romance,
+            kindness, anxiety and suspense.</h2>
+        <p>____</p>
+        <h2>Enjoy every page of Zarina Andreeva's stories.</h2>
+    </section>
+
+    <!-- Раздел фото -->
+    <section id="photos" class="section bg-light">
+        <div class="gallery">
+            <div class="photo-item">
+                <img src="images/cards/jpeg/sectionphoto.png" alt="Фотогалерея">
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел меню -->
+    <section id="menu-buttons" class="section-1">
+        <h2 class="title">WHERE THE START</h2>
+        <div class="wrapperCard">
+            <div class="card-f">
+                <img src="images/cards/jpeg/13.jpg" alt="жизнь">
+                <h3>LIFE</h3>
+                <p>Learn about the life and times of Andreeva</p>
+            </div>
+            <div class="card-f">
+                <img src="images/cards/jpeg/14.jpg" alt="книги">
+                <h3>BOOKS</h3>
+                <p>Discover the romantic and mystical <br> of Zarina Andreeva</p>
+            </div>
+        </div>
+        </div>
+
+        <section id="menu-buttons" class="section-2">
+            <div class="wrapperCard">
+                <div class="card-s">
+                    <img src="images/cards/jpeg/15.jpg" alt="видение">
+                    <h3>VISION</h3>
+                    <p>Meet the writer with <br> a unique perspective on the world</p>
+                </div>
+                <div class="card-s">
+                    <img src="images/cards/jpeg/16.jpg" alt="факты">
+                    <h3>THINGS</h3>
+                    <p>Enjoy things about Andreeva <br> that may surprise you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <section class="footer-social-media">
+                <h3>Zarina Andreeva</h3>
+                <div class="social-media">
+                    <a href="#"><img src="images/icons/twitter.svg" alt="твиттер"></a>
+                    <a href="#"><img src="images/icons/instagram.svg" alt="инстаграм"></a>
+                    <a href="#"><img src="images/icons/facebook.svg" alt="фэйсбук"></a>
+                    <a href="#"><img src="images/icons/youtube.svg" alt="ютуб"></a>
+                </div>
+                <div class="footer-policy">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy & Cookies</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Forum</a>
+                </div>
+            </section>
+        </footer>
+
+        <script>
+            function scrollToSection(sectionId) {
+                document.getElementById(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            // Плавная прокрутка для всех ссылок навигации
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
